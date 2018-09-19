@@ -1,4 +1,4 @@
-package outputExamples;
+package outputExamples; 
 
 public class MailingLabel {
 
