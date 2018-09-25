@@ -14,6 +14,7 @@ public class LockerCombo {
 		System.out.println("Whats the third number in your locker combo?");
 		int thirdNum = input.nextInt();
 		System.out.println(firstNum+" - "+secondNum+" - "+thirdNum);
+		input.close();
 	}
 
 }
