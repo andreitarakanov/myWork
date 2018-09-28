@@ -9,7 +9,7 @@ public class SphereVolume {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Whats the radius of your sphere?");
 		double radius = input.nextDouble();
-		double answer = (radius*radius*radius)*Math.PI*(4/3);
+		double answer = (radius*radius*radius)*Math.PI*4/3;
 		System.out.println("Your sphere is "+answer+" units");
 	}
 
