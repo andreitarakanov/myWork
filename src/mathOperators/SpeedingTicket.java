@@ -13,6 +13,7 @@ public class SpeedingTicket {
 		int speed = input.nextInt();
 		int cost = ((speed-limit-1)*40)+55;
 		System.out.println("You are required to pay $"+cost);
+		input.close();
 	}
 
 }
