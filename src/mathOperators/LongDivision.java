@@ -13,7 +13,7 @@ public class LongDivision {
 		double divisor = input.nextDouble();
 		double remainder = dividend%divisor;
 		double whole = Math.round((dividend/divisor)-0.5);
-		System.out.println(whole+" r "+remainder);
+		System.out.println(Math.round(whole)+" r "+Math.round(remainder));
 	}
 
 }
