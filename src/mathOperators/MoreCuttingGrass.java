@@ -14,10 +14,11 @@ public class MoreCuttingGrass {
 		double deck = input.nextDouble();
 		double newDeck = deck/12;
 		double passesNeeded = Math.round((length/newDeck)+0.5);
-		System.out.println("What is the speed of the mower in ft per hour?");
+		System.out.println("What is the speed of the mower in miles per hour?");
 		double speed = input.nextDouble();
+		speed = speed/5280;
 		double distanceNeeded = passesNeeded *width;
-		double timeNeeded = distanceNeeded/speed;
+		double timeNeeded = (distanceNeeded/speed)/5280;
 		double money = 12*(timeNeeded-1);
 		System.out.println("You will get "+money+" dollars.");
 		input.close();
