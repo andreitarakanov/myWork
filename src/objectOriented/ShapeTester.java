@@ -10,7 +10,7 @@ public class ShapeTester {
 		double heightR = input.nextDouble();
 		Rectangle rect = new Rectangle(lengthR,heightR);
 		System.out.println("The area of this is "+rect.area());
-		System.out.println("The perimeter of this is "+k;
+		System.out.println("The perimeter of this is "+rect.perimeter());
 		
 		System.out.println("Whats the radiu of your circle?");
 		double radius = input.nextDouble();

@@ -6,6 +6,10 @@ public class Circle {
 	{
 		radius = -999.9;
 	}
+	public Circle(double xRadius)
+	{
+		radius = xRadius;
+	}
 	public double returnRadius()
 	{
 		return radius;
