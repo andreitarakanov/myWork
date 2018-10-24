@@ -1,8 +1,7 @@
 package objectOriented;
 import java.util.Scanner;
 public class CarClassTest {
-
-	public static void main(String[] args) {
+public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
 		CarClass momsCar = new CarClass();
@@ -27,7 +26,5 @@ public class CarClassTest {
 		System.out.println("Kids Car has "+kidsCar.getFuel()+" gallons left.");
 		System.out.println("Kids Car has driven "+kidsCar.getOdo()+" miles.");
 		
-		
 	}
-
 }
