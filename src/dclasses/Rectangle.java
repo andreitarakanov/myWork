@@ -9,7 +9,7 @@ public class Rectangle {
 		width = 10;
 	}
 
-	public Rectangle(double l, double w) {
+	public Rectangle(double l,  double w) {
 		length = l;
 		width = w;
 	}
