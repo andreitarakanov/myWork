@@ -1,6 +1,6 @@
-package comparables;
+package comparables;  
 
-public class WorkerStart {
+public class WorkerStart implements Comparable<WorkerStart>{
 	private int hours;
 	private double rate;
 
@@ -9,7 +9,18 @@ public class WorkerStart {
 	hours = 40;
 	rate = 3.50;
 	}
-
+	
+	public int compareTo(WorkerStart xWorker) {
+		if(Math.abs(this.rate-xWorker.getRate())<0.00001) {
+			return 0;
+		}
+		if(this.rate<xWorker.getRate()) {
+			return -1;
+		}
+		return 1; 
+		
+	}
+		
 	public WorkerStart(int newHours, double newRate){
 	hours = newHours;
 	rate = newRate;
