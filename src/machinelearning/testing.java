@@ -8,7 +8,7 @@ public class testing {
 		// TODO Auto-generated method stub
 		double[] values = new double[] { 1,2,3,4,5,6,7,8};
 		
-		Instance instance = new DenseInstance(values);
+		//Instance instance = new DenseInstance(values);
 	}
 
 }
