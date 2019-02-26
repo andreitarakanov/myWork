@@ -1,6 +1,6 @@
 package comparables;
 
-public class CatStart {
+public class CatStart implements Comparable<CatStart>{
 	private int age;
 	private int sleep;
 
@@ -50,5 +50,14 @@ public class CatStart {
 	{
 	sleep--;
 	}
-
+	public int compareTo(CatStart xCat) {
+		if(Math.abs(this.age-xCat.getAge())<0.00001) {
+			return 0;
+		}
+		if(this.age<xCat.getAge()) {
+			return -1;
+		}
+		return 1; 
+		
+	}
 }
