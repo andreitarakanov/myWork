@@ -27,7 +27,9 @@ public class MergeSort {
 
 	public static void sort(int a[], int aux[], int lo, int hi)
 	  {
-	    if(hi <= lo)
+	    if(hi <= lo) {
+	    	
+	    }
 	  }
 
 	public static void main(String[] args) {
