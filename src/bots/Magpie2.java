@@ -20,8 +20,16 @@ public class Magpie2
 	 */
 	public String getResponse(String statement)
 	{
+		String temp = statement.replaceAll(" ","");
 		String response = "";
-		if (statement.indexOf("no") >= 0)
+		if(statement.indexOf("dog") >= 0 || statement.indexOf(" cat ")>= 0)
+		{
+			response = "Bro tell me more about your pets.";
+		}
+		else if (statement.indexOf("hockey")>= 0) {
+			response = "yooo hockey is the best sport.";
+		}
+		else if (statement.indexOf("no") >= 0)
 		{
 			response = "Why so negative?";
 		}
@@ -31,6 +39,10 @@ public class Magpie2
 				|| statement.indexOf("brother") >= 0)
 		{
 			response = "Tell me more about your family.";
+		}
+		else if (temp.length()<1)
+		{
+			response = "jesus christ kids stupid";
 		}
 		else
 		{
